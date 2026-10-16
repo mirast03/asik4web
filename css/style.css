@@ -1,0 +1,12 @@
+body { min-height: 100vh; background: #15191f; color: #f1f3f5; }
+.site-nav { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding: 1rem max(1rem, calc((100vw - 960px) / 2)); background: #232a33; border-bottom: 1px solid #39434e; }
+.site-nav a { color: #d8e7ff; text-decoration: none; }
+.site-nav a:hover, .site-nav a:focus { text-decoration: underline; }
+.site-nav .brand { color: white; font-weight: 700; margin-right: auto; }
+.page-wrap { max-width: 960px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+.page-note { color: #b6c0ca; margin-bottom: 1.5rem; }
+.basic-form { display: grid; gap: .55rem; max-width: 520px; }
+.basic-form input, .basic-form textarea { width: 100%; padding: .5rem .65rem; color: #f1f3f5; background: #212832; border: 1px solid #66717d; border-radius: .35rem; }
+.basic-form button { justify-self: start; padding: .5rem 1rem; color: #fff; background: #0d6efd; border: 0; border-radius: .35rem; }
+.basic-form button:hover { background: #0b5ed7; }
+@media (max-width: 600px) { .site-nav .brand { width: 100%; } }

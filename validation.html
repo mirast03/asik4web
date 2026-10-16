@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task 1 | Assignment 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <form>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required maxlenght="50">
-        <br>
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required maxlenght="100">
-        <br>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required maxlenght="500"></textarea>
-        <button type="submit">Submit</button>
-    </form>
+    <nav class="site-nav" aria-label="Tasks">
+        <a class="brand" href="index.html">Assignment 4</a>
+        <a href="index.html">Task 0</a>
+        <a href="validation.html">Task 1</a>
+        <a href="bootstrap.html">Task 2</a>
+        <a href="bootstrap-validation.html">Task 3</a>
+        <a href="registration.html">Task 4</a>
+    </nav>
+    <main class="page-wrap">
+        <h1>Task 1: HTML5 Validation</h1>
+        <p class="page-note">Try an empty field, an invalid email, or text beyond the length limit.</p>
+        <form class="basic-form" action="#">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required maxlength="50">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required maxlength="100">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required maxlength="500"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
 </body>
 </html>
